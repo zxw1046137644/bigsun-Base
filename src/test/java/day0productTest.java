@@ -2,7 +2,11 @@ import zzz.product.Customer;
 import zzz.product.DianEr;
 import zzz.product.Producter;
 
-public class productTest {
+public class day0productTest {
+
+    /**
+     * product包，生产者消费者的简单实现
+     */
     public static void main(String[] args) {
         DianEr dianEr =new DianEr();
         Customer customer = new Customer(dianEr);

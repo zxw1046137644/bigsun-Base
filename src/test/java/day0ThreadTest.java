@@ -1,7 +1,11 @@
 import zzz.ThreadT;
 
 
-public class ThreadTest {
+public class day0ThreadTest {
+    /**
+     * 多线程的简单实现
+     * @param args
+     */
     public static void main(String[] args) {
         ThreadT2 th = new ThreadT2();
         ThreadT2 th2 = new ThreadT2();

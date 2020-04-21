@@ -10,6 +10,7 @@ import java.util.List;
 public class day3CompareTest {
 
     /**
+     * 集合排序
      * Comparable,Comparator()
      */
 

@@ -3,12 +3,6 @@ import org.junit.Test;
 import java.util.*;
 
 public class day4MapTest {
-    Map hashMap = new HashMap();
-    Map linkedHashMap = new LinkedHashMap();
-    Map treeMap = new TreeMap();
-    Map hashtable = new Hashtable();
-
-
     /**
      * Map
      * ---HashMap主要实现类，效率高，线程不安全,可以存储 key：null value ：null,如果存储自定义类，那么要重写类中equals和HashCode方法
@@ -55,6 +49,10 @@ public class day4MapTest {
      * Values:
      * equals:判断当前map和传入的数据是否相同 所有都相同
      */
+    Map hashMap = new HashMap();
+    Map linkedHashMap = new LinkedHashMap();
+    Map treeMap = new TreeMap();
+    Map hashtable = new Hashtable();
     @Test
     public void put() {
         System.out.println(hashMap.isEmpty());

@@ -1,7 +1,7 @@
 import zzz.lock.Account;
 import zzz.lock.Lock;
 
-public class LockTest {
+public class day0LockTest {
 
     public static void main(String[] args) {
         Account acc =new Account(0);

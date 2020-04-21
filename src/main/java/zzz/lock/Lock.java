@@ -1,6 +1,7 @@
 package zzz.lock;
 
 public class Lock  extends Thread{
+
     private Account acc;
 
     public Lock(Account acc){

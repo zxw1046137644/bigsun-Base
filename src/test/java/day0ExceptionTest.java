@@ -4,6 +4,9 @@ import zzz.bb;
 import javax.management.AttributeList;
 import java.util.*;
 
+/**
+ * 异常
+ */
 public class day0ExceptionTest {
     public static void main(String[] args) {
         bb b = new bb();

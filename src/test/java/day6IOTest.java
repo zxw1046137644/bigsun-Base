@@ -4,21 +4,22 @@ import java.io.File;
 import java.io.IOException;
 
 public class day6IOTest {
-
-
     /**
-     * IO流的使用
+     * IO流的使用，File的常用方法
      * 1.File类,代表一个文件或者一个文件夹
      * create 2020.4.20 bigsun
      */
 
 
-    @Test//("File类的实例化")
+    @Test//("File类的实例化三种方式")
     public void test1() {
+        //文件名
         File file = new File("fil.txt");
         System.out.println(file);
+        //父目录+子目录
         File file1 = new File("d:", "path");
         System.out.println(file1);
+        //路径+文件名
         File file2 = new File(file1, "fil.txt");
         System.out.println(file2);
     }

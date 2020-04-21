@@ -7,6 +7,9 @@ import java.util.TreeSet;
 
 public class day4SetTest {
 
+    /**
+     * set
+     */
     HashSet hashSet = new HashSet();
     LinkedHashSet linkedHashSet = new LinkedHashSet();
     TreeSet treeSet = new TreeSet();
