@@ -12,7 +12,7 @@ public class day4ListTest {
     Vector vector =new Vector();
     @Test
     public void arrayList() {
-
+        arrayList.add(null);
     }
 
     @Test
@@ -28,7 +28,14 @@ public class day4ListTest {
 
     @Test
     public void LinkedList() {
-
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(14);
+        for (Object list:arrayList)
+        {
+            System.out.println(list);
+        }
     }
 
     @Test

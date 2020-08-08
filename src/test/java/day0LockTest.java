@@ -11,5 +11,6 @@ public class day0LockTest {
         lock2.setName("用户2");
         lock1.start();
         lock2.start();
+
     }
 }

@@ -142,7 +142,7 @@ public class day2CollectionTest {
         System.out.println(list);
     }
 
-    @Test
+    @Test//迭代器遍历
     public void iterator() {
         co.add(2);
         co.add(new Object());

@@ -36,26 +36,59 @@ public class day4MapTest {
      * 常用方法
      * put:增加元素
      * clear：清除map中数据
-     *isEmpty：判断map是否为空
-     *size：查看map中数据长度
-     *clone：
-     *containsKey：查看map是否有该key
-     *containsValue：查看map中是否有该value
-     *entrySet:取所有key-Value Set类型，就可以Collection遍历了
-     *get:用key获取值:
-     *putAll:
+     * isEmpty：判断map是否为空
+     * size：查看map中数据长度
+     * clone：
+     * containsKey：查看map是否有该key
+     * containsValue：查看map中是否有该value
+     * entrySet:取所有key-Value Set类型，就可以Collection遍历了
+     * get:用key获取值:
+     * putAll:
      * keySet:获取所有key Set类型，就可以Collection遍历了
      * remove:
      * Values:
      * equals:判断当前map和传入的数据是否相同 所有都相同
      */
-    Map hashMap = new HashMap();
+    Map<String,Object> hashMap = new HashMap<String,Object>();
     Map linkedHashMap = new LinkedHashMap();
     Map treeMap = new TreeMap();
     Map hashtable = new Hashtable();
+
+
     @Test
     public void put() {
         System.out.println(hashMap.isEmpty());
 
+    }
+
+    @Test//迭代器循环遍历
+    public void itMap() {
+        hashMap.put("1",1);
+        //普通
+        Iterator<String> iterator = hashMap.keySet().iterator();
+        while (iterator.hasNext()) {
+            String key = iterator.next();
+            System.out.println(hashMap.get(key));
+        }
+        //entrySet最快
+        Iterator<Map.Entry<String,Object>> iterator1 = hashMap.entrySet().iterator();
+        while (iterator1.hasNext()) {
+            Map.Entry<String, Object> entry = iterator1.next();
+            System.out.println(entry.getKey());
+        }
+
+    }
+
+    @Test//增强for
+    public void poorMap() {
+        hashMap.put("1",1);
+        //普通
+        for (Object key : hashMap.keySet()) {
+            System.out.println("key" + key + "value" + hashMap.get(key));
+        }
+        //entrySet
+        for (Map.Entry<String, Object> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey());
+        }
     }
 }
