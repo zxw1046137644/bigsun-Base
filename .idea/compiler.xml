@@ -9,6 +9,7 @@
         <module name="chu" />
         <module name="base" />
         <module name="Java-Base" />
+        <module name="bigsun-Base" />
         <module name="Stest" />
       </profile>
     </annotationProcessing>
