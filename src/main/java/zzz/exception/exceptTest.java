@@ -15,6 +15,10 @@ public class exceptTest {
             System.out.println(B);
             List<Integer> waitStatus = Arrays.asList(0, 1, 2, 3);
             System.out.println(waitStatus.contains(2));
+            System.out.println(waitStatus);
+            List<Integer> a = waitStatus;
+            System.out.print(a);
+            System.out.println(new two());
         }catch (Exception e)
         {
             System.out.println(e.getMessage());
@@ -24,9 +28,20 @@ public class exceptTest {
 
 }
 class two{
+
+    @Override
+    public String toString() {
+        return "two{" +
+                "name='" + name + '\'' +
+                '}';
+    }
+
+    private String name;
+
     public Boolean sta() throws CustomException {
-        CustomException.exceptionCreate("有异常");
+//        CustomException.exceptionCreate("有异常");
 //        int a = 1/0;
         return false;
     }
+
 }
