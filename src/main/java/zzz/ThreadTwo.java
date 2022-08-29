@@ -2,6 +2,7 @@ package zzz;
 
 public class ThreadTwo implements Runnable {
     private int ticket = 100;
+
     Object obj = new Object();
 
     public void run() {

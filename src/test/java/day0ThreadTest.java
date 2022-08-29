@@ -1,4 +1,4 @@
-import zzz.ThreadT;
+
 
 
 public class day0ThreadTest {
