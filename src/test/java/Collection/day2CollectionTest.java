@@ -1,10 +1,12 @@
+package Collection;
+
 import org.junit.Test;
 
 import java.util.*;
 
 public class day2CollectionTest {
     /**
-     * 集合
+     * 集合api方法
      */
     Collection co = new ArrayList();
     List list =new ArrayList();

@@ -1,3 +1,5 @@
+package Collection;
+
 import org.junit.Test;
 
 import java.util.*;
@@ -49,7 +51,7 @@ public class day4MapTest {
      * Values:
      * equals:判断当前map和传入的数据是否相同 所有都相同
      */
-    Map<String,Object> hashMap = new HashMap<String,Object>();
+    Map<String, Object> hashMap = new HashMap<String, Object>();
     Map linkedHashMap = new LinkedHashMap();
     Map treeMap = new TreeMap();
     Map hashtable = new Hashtable();
@@ -57,13 +59,12 @@ public class day4MapTest {
 
     @Test
     public void put() {
-        System.out.println(hashMap.isEmpty());
 
     }
 
     @Test//迭代器循环遍历
     public void itMap() {
-        hashMap.put("1",1);
+        hashMap.put("1", 1);
         //普通
         Iterator<String> iterator = hashMap.keySet().iterator();
         while (iterator.hasNext()) {
@@ -71,7 +72,7 @@ public class day4MapTest {
             System.out.println(hashMap.get(key));
         }
         //entrySet最快
-        Iterator<Map.Entry<String,Object>> iterator1 = hashMap.entrySet().iterator();
+        Iterator<Map.Entry<String, Object>> iterator1 = hashMap.entrySet().iterator();
         while (iterator1.hasNext()) {
             Map.Entry<String, Object> entry = iterator1.next();
             System.out.println(entry.getKey());
@@ -81,7 +82,7 @@ public class day4MapTest {
 
     @Test//增强for
     public void poorMap() {
-        hashMap.put("1",1);
+        hashMap.put("1", 1);
         //普通
         for (Object key : hashMap.keySet()) {
             System.out.println("key" + key + "value" + hashMap.get(key));
@@ -91,4 +92,6 @@ public class day4MapTest {
             System.out.println(entry.getKey());
         }
     }
+
+
 }

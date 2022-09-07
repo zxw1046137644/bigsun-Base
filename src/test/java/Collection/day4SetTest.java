@@ -1,3 +1,5 @@
+package Collection;
+
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -14,12 +16,16 @@ public class day4SetTest {
     LinkedHashSet linkedHashSet = new LinkedHashSet();
     TreeSet treeSet = new TreeSet();
 
+
+
+    Integer a;
     @Test
     public void treeTest1() {
         treeSet.add(1);
         treeSet.add(3);
         treeSet.add(3);
         treeSet.add(4);
+
         treeSet.add(2);
         System.out.println(treeSet);
         Iterator iterator = treeSet.iterator();
