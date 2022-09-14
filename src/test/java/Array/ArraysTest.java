@@ -14,6 +14,7 @@ public class ArraysTest {
 
     @Test
     public void Test() {
+
         System.out.println(Arrays.copyOf(nums,nums.length *2).length);
     }
 }
