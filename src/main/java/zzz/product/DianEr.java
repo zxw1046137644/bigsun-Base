@@ -9,7 +9,7 @@ public class DianEr {
 
             sum++;
             System.out.println(Thread.currentThread().getName() + "开始生产了" + sum);
-            notify();
+            notifyAll();
         } else {
             try {
                 wait();
@@ -22,10 +22,10 @@ public class DianEr {
     public synchronized void custom() throws InterruptedException {//消费
 
         if (sum > 0) {
-            Thread.sleep(50);
+            Thread.sleep(250);
             System.out.println(Thread.currentThread().getName() + "开始消费" + sum);
             sum--;
-            notify();
+            notifyAll();
         } else {
             try {
                 wait();

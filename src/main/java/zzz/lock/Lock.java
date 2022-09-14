@@ -1,17 +1,16 @@
 package zzz.lock;
 
-public class Lock  extends Thread{
+public class Lock implements Runnable {
 
-    private Account acc;
+    public Account account;
 
-    public Lock(Account acc){
-        this.acc=acc;
+    public Lock(Account account) {
+        this.account = account;
     }
+
 
     @Override
     public void run() {
-        for (int i =0;i<3;i++){
-       acc.setMoney(1000);
-        }
-     }
+            System.out.println(account.setMoney(1000));
+    }
 }
