@@ -1,5 +1,9 @@
 package zzz.collection;
 
+import lombok.SneakyThrows;
+
+import java.util.Objects;
+
 public class Emplay implements Comparable {
 
     @Override
@@ -14,6 +18,8 @@ public class Emplay implements Comparable {
         this.name = name;
         this.age = age;
     }
+    public Emplay() {
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -27,7 +33,7 @@ public class Emplay implements Comparable {
         return name;
     }
 
-    public Integer getAge() {
+    public int getAge() {
         return age;
     }
 
@@ -35,12 +41,34 @@ public class Emplay implements Comparable {
     private Integer age;
 
 
-    public int compareTo(Object o) {
-        if (o instanceof Emplay) {//判断是否同类
-            Emplay emplay = (Emplay) o;//类型转换
-            return this.age.compareTo(emplay.age);
 
+
+    /**
+     * 按照年龄排序
+     * @param o
+     * @return
+     */
+    @SneakyThrows
+    @Override
+    public int compareTo(Object o) {
+        if (o instanceof Emplay){
+          Emplay emplay = (Emplay) o;
+            return this.age.compareTo(emplay.age);
         }
-        throw new RuntimeException("传入的数据类型不一致");
+        throw new Exception("类型传入错误");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Emplay emplay = (Emplay) o;
+        return Objects.equals(name, emplay.name) &&
+                Objects.equals(age, emplay.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
     }
 }

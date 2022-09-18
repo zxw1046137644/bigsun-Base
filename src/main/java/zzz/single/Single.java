@@ -1,5 +1,6 @@
 package zzz.single;
 
+
 /**
  * 单例线程安全模式
  */

@@ -1,6 +1,7 @@
 package Collection;
 
 import org.junit.Test;
+import zzz.collection.Emplay;
 
 import java.util.*;
 
@@ -43,6 +44,7 @@ public class day4ListTest {
     @Test
     public void LinkedList() {
         arrayList.add(12);
+        arrayList.add(12);
         arrayList.add(2);
         arrayList.add(3);
         arrayList.add(14);
@@ -70,6 +72,26 @@ public class day4ListTest {
 
     }
 
+    @Test
+    public void EqualTest() {//1010
+        List<Emplay> b1 = new ArrayList();
+        List<Emplay> b2 = new ArrayList();
+        Emplay a1 = new Emplay();
+        Emplay a2 = new Emplay();
+        a1.setAge(1);
+        a1.setName("z");
+        a2.setAge(1);
+        a2.setName("z");
+        System.out.println(a1.equals(a2));
+        b1.add(a1);
+        b2.add(a2);
+        System.out.println(b1.equals(b2));
+        //list转化数组
+        Object[] objects = b2.toArray();
+
+        System.out.println(Arrays.toString(objects));
+
+    }
 
 
     @Test
