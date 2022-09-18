@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class arrayTest {
 
-    int[] intValue = new int[]{1,234,4,3,5,5};
+    int[] intValue = new int[]{1,234,4,3,5,5,2};
     @Test
     public void Test(){
         System.out.println(intValue);
