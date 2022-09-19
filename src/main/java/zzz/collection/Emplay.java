@@ -18,6 +18,9 @@ public class Emplay implements Comparable {
         this.name = name;
         this.age = age;
     }
+    public Emplay(Integer age) {
+        this.age = age;
+    }
     public Emplay() {
     }
 
@@ -40,6 +43,9 @@ public class Emplay implements Comparable {
     private String name;
     private Integer age;
 
+    private void show(){
+        System.out.println("age="+this.age);
+    }
 
 
 
