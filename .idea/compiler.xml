@@ -7,11 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Java-Base" />
         <module name="chu" />
-        <module name="base" />
-        <module name="Stest" />
         <module name="bigsun-Base" />
+        <module name="Stest" />
+        <module name="Java-Base" />
+        <module name="base" />
       </profile>
     </annotationProcessing>
   </component>

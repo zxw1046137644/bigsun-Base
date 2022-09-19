@@ -19,6 +19,9 @@ public class day4ListTest {
 
     List linkedList = new LinkedList();
 
+    /**
+     * 线程安全
+     */
     List vector =new Vector();
 
 

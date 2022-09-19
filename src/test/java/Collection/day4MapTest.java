@@ -1,6 +1,7 @@
 package Collection;
 
 import org.junit.Test;
+import zzz.collection.Emplay;
 
 import java.util.*;
 
@@ -64,6 +65,10 @@ public class day4MapTest {
 
     @Test//迭代器循环遍历
     public void itMap() {
+        Emplay emplay= new Emplay();
+        emplay.setAge(1);
+        emplay.setName("zzz");
+        hashMap.put("2",emplay);
         hashMap.put("1", 1);
         //普通
         Iterator<String> iterator = hashMap.keySet().iterator();
@@ -72,11 +77,11 @@ public class day4MapTest {
             System.out.println(hashMap.get(key));
         }
         //entrySet最快
-        Iterator<Map.Entry<String, Object>> iterator1 = hashMap.entrySet().iterator();
-        while (iterator1.hasNext()) {
-            Map.Entry<String, Object> entry = iterator1.next();
-            System.out.println(entry.getKey());
-        }
+//        Iterator<Map.Entry<String, Object>> iterator1 = hashMap.entrySet().iterator();
+//        while (iterator1.hasNext()) {
+//            Map.Entry<String, Object> entry = iterator1.next();
+//            System.out.println(entry.getKey());
+//        }
 
     }
 

@@ -25,7 +25,7 @@ public class Emplay implements Comparable {
         this.name = name;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
@@ -33,7 +33,7 @@ public class Emplay implements Comparable {
         return name;
     }
 
-    public int getAge() {
+    public Integer getAge() {
         return age;
     }
 
