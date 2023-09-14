@@ -1,7 +1,7 @@
 package zzz.reflex;
 
 import org.junit.Test;
-import zzz.collection.Emplay;
+import zzz.Collection.Emplay;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -26,11 +26,11 @@ public class reflexTest {
         Class emplay2 = emplay.getClass();
         //2
         ClassLoader aClass = Emplay.class.getClassLoader();
-        Class<?> emplay4 = aClass.loadClass("zzz.collection.Emplay");
+        Class<?> emplay4 = aClass.loadClass("zzz.Collection.Emplay");
         //3使用类加载器
         Class emplay1 = Emplay.class;
 
-        Class emplay3 = Class.forName("zzz.collection.Emplay");
+        Class emplay3 = Class.forName("zzz.Collection.Emplay");
 
 
         System.out.println(emplay2 == emplay1);

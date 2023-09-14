@@ -2,7 +2,7 @@ package Collection;
 
 
 import org.junit.Test;
-import zzz.collection.Emplay;
+import zzz.Collection.Emplay;
 
 import java.util.*;
 

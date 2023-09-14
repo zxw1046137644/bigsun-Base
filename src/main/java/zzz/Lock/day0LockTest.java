@@ -1,4 +1,4 @@
-package zzz.lock;
+package zzz.Lock;
 
 
 public class day0LockTest {

@@ -1,4 +1,4 @@
-package zzz.lock;
+package zzz.Lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

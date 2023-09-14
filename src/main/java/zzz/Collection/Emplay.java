@@ -1,4 +1,4 @@
-package zzz.collection;
+package zzz.Collection;
 
 import lombok.SneakyThrows;
 

@@ -1,4 +1,4 @@
-package zzz.exception;
+package zzz.Exception;
 
 
 import org.apache.commons.lang3.ArrayUtils;
